@@ -12,15 +12,29 @@ function dispDays(numDays, currDay) {
 	  }
 	}
 	document.getElementById("calDays").innerHTML = text;
-	console(document.getElementByID("currMonth"))
 }
 
-function nextMonth(currMonth) {
-	numMonth = months.indexOf(currMonth);
-	newMonth = numMonth+1;
-	if (newMonth > 12) {
-		newMonth -= 12;
-
+function nextMonth() {
+	month = months.indexOf(document.getElementById("currMonth").textContent);
+	month = month+1;
+	year = parseInt(String(document.getElementById("currYear").textContent));
+	if (month > 11) {
+		month -= 11;
+		year = year + 1;
 	}
-	return 
+	document.getElementById("currMonth").innerHTML = months[month];
+	document.getElementById("currYear").innerHTML = year;
 }
+
+function prevMonth() {
+	month = months.indexOf(document.getElementById("currMonth").textContent);
+	month = month-1;
+	year = parseInt(String(document.getElementById("currYear").textContent));
+	if (month < 0) {
+		month += 11;
+		year = year - 1;
+	}
+	document.getElementById("currMonth").innerHTML = months[month];
+	document.getElementById("currYear").innerHTML = year;
+}
+
