@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>HackGT Perry 2</title>
+    <title>HackGT Perry 2</title>
 		<link rel="stylesheet" href="hackgt.css">
-    <script src="wrldcalendar.js"></script>
 	</head>
 
 	<body>
@@ -40,12 +39,23 @@
       <li>Sa</li>
     </ul>
 
-    <ul class="days" id="calDays"></ul>
+    <ul class="days" id="calDays">
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li>
+    </ul>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="wrldcalendar.js"></script>
     <script type="text/javascript">
       dispDays();   // Writes numbers to calendar 
       writeMonth();
       writeYear();
     </script>
+    <script src="worldcalendar2.js"></script>
+    <script src="country-code-altering.js"></script>
 	</body>
 </html>

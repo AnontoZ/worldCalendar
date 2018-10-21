@@ -1,3 +1,4 @@
+"use strict";
 var months = [ "January","February","March","April","May","June","July","August","September",
 	"October","November","December"];
 var monthDays = [31,getFebDays(),31,30,31,30,31,31,30,31,30,31];
@@ -10,10 +11,10 @@ function dispDays() {
 	currDay = getDay();
 	for (i = 1; i <= numDays; i++) {
 	  if (i == currDay) {
-	  	text += "<li><span class='active'>" + i.toString() + "</span></li>"
+	  	text += "<li><span class='active'>" + i.toString() + "<br></span></li>"
 	  } 
 	  else {
-	  	text += "<li>"+ i.toString() + "</li>";
+	  	text += "<li>"+ i.toString() + "<br></li>";
 	  }
 	}
 	text += getDaysAfter(month,year);
@@ -41,9 +42,9 @@ function dispCalDays(month, year) {
 }
 
 function nextMonth() {
-	month = months.indexOf(document.getElementById("currMonth").textContent);
-	month = month+1;
-	year = parseInt(String(document.getElementById("currYear").textContent));
+	var month = months.indexOf(document.getElementById("currMonth").textContent);
+	var month = month+1;
+	var year = parseInt(String(document.getElementById("currYear").textContent));
 	if (month > 11) {
 		month -= 12;
 		year = year + 1;
@@ -54,9 +55,9 @@ function nextMonth() {
 }
 
 function prevMonth() {
-	month = months.indexOf(document.getElementById("currMonth").textContent);
-	month = month-1;
-	year = parseInt(String(document.getElementById("currYear").textContent));
+	var month = months.indexOf(document.getElementById("currMonth").textContent);
+	var month = month-1;
+	var year = parseInt(String(document.getElementById("currYear").textContent));
 	if (month < 0) {
 		month += 12;
 		year = year - 1;
