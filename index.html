@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HackGT Perry 2</title>
+		<link rel="stylesheet" href="hackgt.css">
+    <script src="wrldcalendar.js"></script>
+	</head>
+
+	<body>
+    <header>
+      <div id="about" class = "header">
+        <h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
+        <p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
+        <!--about, contact, and search bar-->
+        <a href="about.html" class="text"><center>About</center></a>
+      </div>
+    </header>
+		
+		<!--calender-->
+		<div class="month"> 
+      <ul>
+        <li class="prev" onclick="prevMonth()">&#10094;</li>
+        <li class="next" onclick="nextMonth()">&#10095;</li>
+        <li id = "currMonth" class = 'title'></li>
+        <li id = "currYear" style="font-size:18px"></li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li>Su</li>
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+    </ul>
+
+    <ul class="days" id="calDays"></ul>
+
+    <script type="text/javascript">
+      dispDays();   // Writes numbers to calendar 
+      writeMonth();
+      writeYear();
+    </script>
+
+    <div class="footer">
+    </div>
+	</body>
+</html>

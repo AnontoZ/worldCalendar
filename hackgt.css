@@ -1,29 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
 
 body {
-	font family: 'Chakra Petch', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	color: black;
-	background-color: white;
-	margin-top: 2em;
+	background-color: #fafafa;
+	margin: 0;
 }
 
 h1 {
-	font-family:;
+	font-family: 'Oswald';
+    color: white;
 }
 
+p {
+    font-family: 'Open+Sans', sans-serif;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:hover, a:active, a:visited { color: white; }
+
+* {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-/* Month header */
+.text {
+    color:black;
+}
+
+.maintext {
+    color:black;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #6c757d;
+    padding: 10px 10px;
+    color: white;
+    font-style: 'light';
+    font-family: 'Oswald'
+}
+
 .month {
-    padding: 70px 25px;
+    padding: 10px 10px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
 }
 
-/* Month list */
 .month ul {
     margin: 0;
     padding: 0;
@@ -36,23 +66,33 @@ body {font-family: Verdana, sans-serif;}
     letter-spacing: 3px;
 }
 
-/* Previous button inside month header */
 .month .prev {
     float: left;
     padding-top: 10px;
 }
 
-/* Next button */
 .month .next {
     float: right;
     padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
+.month .title {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:40px;
+}
+
+.month .year {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:25px;
+}
+
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color:#ddd;
+    background-color: #ddd;
+    font-family: 'Oswald';
 }
 
 .weekdays li {
@@ -62,11 +102,12 @@ body {font-family: Verdana, sans-serif;}
     text-align: center;
 }
 
-/* Days (1-31) */
 .days {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 .days li {
@@ -79,9 +120,39 @@ body {font-family: Verdana, sans-serif;}
     color: #777;
 }
 
-/* Highlight the "current" day */
 .days li .active {
     padding: 5px;
     background: #1abc9c;
     color: white !important
+}
+
+.footer {
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: #010b1c;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer .text {
+    font-style: 'light';
+    font-family: 'Oswald'
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
 }
