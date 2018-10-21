@@ -7,38 +7,36 @@
 
 	<body>
     <header>
-  		<div id="about">
+  		<div id="about" class = "header">
   			<h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
-  			<p>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</p>
+  			<p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
   		</div>
     </header>
 
-		<div id="navbar">
-			<u1>
-				<li>
-					<a class="nav-link">List of Countries</a>
-        </li>
-      </u1>
-		</div>
+    <div class="header">
+        <center><a class="active" href="index.html">Home</a>
+        <a href="about.html" class="about">About</a>
+        <a href="contact.html">Contact Us</a></center>
+    </div>
 		
 		<!--calender-->
 		<div class="month"> 
       <ul>
-        <li class="prev"><button onclick="prevMonth()">&#10094;</button></li>
-        <li class="next"><button onclick="nextMonth()">&#10095;</button></li>
-        <li id = "currMonth">January</li>
-        <li id = "currYear" style="font-size:18px">2017</li>
+        <li class="prev" onclick="prevMonth()">&#10094;</li>
+        <li class="next" onclick="nextMonth()">&#10095;</li>
+        <li id = "currMonth" class = 'title'></li>
+        <li id = "currYear" style="font-size:18px"></li>
       </ul>
     </div>
 
     <ul class="weekdays">
+      <li>Su</li>
       <li>Mo</li>
       <li>Tu</li>
       <li>We</li>
       <li>Th</li>
       <li>Fr</li>
       <li>Sa</li>
-      <li>Su</li>
     </ul>
 
     <ul class="days" id="calDays">
@@ -53,7 +51,9 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="wrldcalendar.js"></script>
     <script type="text/javascript">
-      dispDays(31,7);    // Writes numbers to calendar 
+      dispDays();   // Writes numbers to calendar 
+      writeMonth();
+      writeYear();
     </script>
     <script src="worldcalendar2.js"></script>
     <script src="country-code-altering.js"></script>

@@ -1,26 +1,22 @@
 /*@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
 
 body {
 	font-family: 'Oswald', sans-serif;
 	color: black;
 	background-color: #fafafa;
-	/*margin-top: 2em;*/
-}
-
-header {
-    /*background-color: #6c757d;*/
-    /*width: 100%;*/
+	margin: 0;
 }
 
 h1 {
 	font-family: 'Oswald';
+    color: white;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    color: black;
+    font-family: 'Open+Sans', sans-serif;
+    color: white;
 }
 
 ul {
@@ -30,6 +26,15 @@ ul {
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
+
+.header {
+    overflow: hidden;
+    background-color: #6c757d;
+    padding: 20px 10px;
+    color: white;
+    font-style: 'light';
+    font-family: 'Oswald'
+}
 
 .month {
     padding: 70px 25px;
@@ -60,10 +65,23 @@ body {font-family: Verdana, sans-serif;}
     padding-top: 10px;
 }
 
+.month .title {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:40px;
+}
+
+.month .year {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:25px;
+}
+
 .weekdays {
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    font-family: 'Oswald';
 }
 
 .weekdays li {
@@ -77,6 +95,8 @@ body {font-family: Verdana, sans-serif;}
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 .days li {
