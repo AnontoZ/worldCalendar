@@ -3,9 +3,6 @@
 	<head>
     <title>HackGT Perry 2</title>
 		<link rel="stylesheet" href="hackgt.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="wrldcalendar.js"></script>
-    <script src="worldcalendar2.js"></script>
 	</head>
 
 	<body>
@@ -29,7 +26,7 @@
       <ul>
         <li class="prev"><button onclick="prevMonth()">&#10094;</button></li>
         <li class="next"><button onclick="nextMonth()">&#10095;</button></li>
-        <li id = "currMonth">August<br></li>
+        <li id = "currMonth">January</li>
         <li id = "currYear" style="font-size:18px">2017</li>
       </ul>
     </div>
@@ -44,10 +41,21 @@
       <li>Su</li>
     </ul>
 
-    <ul class="days" id="calDays"></ul>
+    <ul class="days" id="calDays">
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li>
+    </ul>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="wrldcalendar.js"></script>
     <script type="text/javascript">
       dispDays(31,7);    // Writes numbers to calendar 
     </script>
+    <script src="worldcalendar2.js"></script>
+    <script src="country-code-altering.js"></script>
 	</body>
 </html>
