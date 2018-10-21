@@ -19,11 +19,29 @@ p {
     color: white;
 }
 
+a, a:hover, a:active, a:visited { color: white; }
+
 ul {
     list-style-type: none;
 }
 
-a, a:hover, a:active, a:visited { color: white; }
+.btn {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    background: #1abc9c;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 2px 1px;
+}
+
+.arrow {
+    cursor: pointer;
+}
 
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
@@ -41,10 +59,12 @@ body {font-family: Verdana, sans-serif;}
 .header {
     overflow: hidden;
     background-color: #6c757d;
-    padding: 10px 10px;
+    padding: 20px 10px;
     color: white;
     font-style: 'light';
-    font-family: 'Oswald'
+    font-family: 'Oswald';
+    display: flex;
+    justify-content: space-around;
 }
 
 .month {
@@ -113,9 +133,9 @@ body {font-family: Verdana, sans-serif;}
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 13.8%;
+    height: 100px;
     text-align: center;
-    margin-bottom: 5px;
     font-size:12px;
     color: #777;
 }
@@ -141,6 +161,7 @@ body {font-family: Verdana, sans-serif;}
 .footer .text {
     font-style: 'light';
     font-family: 'Oswald'
+    color: white !important;
 }
 
 /* Add media queries for smaller screens */
