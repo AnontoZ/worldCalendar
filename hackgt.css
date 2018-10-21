@@ -1,29 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+/*@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
 
 body {
 	font-family: 'Oswald', sans-serif;
 	color: black;
 	background-color: #fafafa;
-	/*margin-top: 2em;*/
+	margin: 0;
 }
 
-header {
-    background-color: #fafafa;
-    /*width: 100%;*/
-}
-
-}
-
-/*font for header1*/
 h1 {
-    font-family: 'Oswald';
+	font-family: 'Oswald';
+    color: white;
 }
-/*paragraph font*/
+
 p {
-    font-family: 'Raleway', sans-serif;
-    color: black;
+    font-family: 'Open+Sans', sans-serif;
+    color: white;
 }
 
 ul {
@@ -34,13 +27,15 @@ ul {
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-/*#about {
-    text-align: center;
-    color: blue;
-    font-size: 1em;
-*/
+.header {
+    overflow: hidden;
+    background-color: #6c757d;
+    padding: 20px 10px;
+    color: white;
+    font-style: 'light';
+    font-family: 'Oswald'
+}
 
-/*calender*/
 .month {
     padding: 70px 25px;
     width: 100%;
@@ -55,7 +50,7 @@ body {font-family: Verdana, sans-serif;}
 
 .month ul li {
     color: white;
-    font-size: 80px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -70,31 +65,44 @@ body {font-family: Verdana, sans-serif;}
     padding-top: 10px;
 }
 
+.month .title {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:40px;
+}
+
+.month .year {
+    font-family: 'Oswald';
+    font-style: 'light';
+    font-size:25px;
+}
+
 .weekdays {
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    font-family: 'Oswald';
 }
 
 .weekdays li {
     display: inline-block;
-    width: 13.65%;
+    width: 13.6%;
     color: #666;
     text-align: center;
-    font-size:14px;
-    font-weight: bolder;
 }
 
 .days {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.9%;
+    width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
     font-size:12px;
