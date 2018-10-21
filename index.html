@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>HackGT Perry 2</title>
+		<title>HackGT Perry 2</title>
 		<link rel="stylesheet" href="hackgt.css">
+    <script src="wrldcalendar.js"></script>
 	</head>
 
 	<body>
     <header>
-  		<div id="about" class = "header">
-        <div>
-  			 <h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
-  			 <p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
-         <div class="btn">Choose a Country and Year</div>
-        </div>
-  		</div>
+      <div id="about" class = "header">
+        <h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
+        <p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
+        <!--about, contact, and search bar-->
+        <a href="about.html" class="text"><center>About</center></a>
+      </div>
     </header>
-
-    <div class="header">
-        <center><a class="active" href="index.html">Home</a>
-        <a href="about.html" class="about">About</a>
-        <a href="contact.html">Contact Us</a></center>
-    </div>
 		
 		<!--calender-->
 		<div class="month"> 
       <ul>
-        <li class="prev arrow" onclick="prevMonth()">&#10094;</li>
-        <li class="next arrow" onclick="nextMonth()">&#10095;</li>
-        <li id="currCountry" style="font-size:18px">United States</li>
+        <li class="prev" onclick="prevMonth()">&#10094;</li>
+        <li class="next" onclick="nextMonth()">&#10095;</li>
         <li id = "currMonth" class = 'title'></li>
         <li id = "currYear" style="font-size:18px"></li>
       </ul>
@@ -45,13 +38,13 @@
 
     <ul class="days" id="calDays"></ul>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="wrldcalendar.js"></script>
     <script type="text/javascript">
       dispDays();   // Writes numbers to calendar 
       writeMonth();
       writeYear();
     </script>
-    <script src="worldcalendar2.js"></script>
+
+    <div class="footer">
+    </div>
 	</body>
 </html>

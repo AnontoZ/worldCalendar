@@ -19,6 +19,8 @@ p {
     color: white;
 }
 
+a, a:hover, a:active, a:visited { color: white; }
+
 ul {
     list-style-type: none;
 }
@@ -45,6 +47,15 @@ ul {
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
+.text {
+    color:black;
+}
+
+.maintext {
+    color:black;
+    font-family: 'Open+Sans', sans-serif;
+}
+
 .header {
     overflow: hidden;
     background-color: #6c757d;
@@ -57,7 +68,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month {
-    padding: 70px 25px;
+    padding: 10px 10px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
@@ -132,6 +143,24 @@ body {font-family: Verdana, sans-serif;}
 .days li .active {
     padding: 5px;
     background: #1abc9c;
+    color: white !important
+}
+
+.footer {
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: #010b1c;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer .text {
+    font-style: 'light';
+    font-family: 'Oswald'
     color: white !important;
 }
 

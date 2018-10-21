@@ -148,4 +148,3 @@ function writeMonth() {
 function writeYear() {
 	document.getElementById("currYear").innerHTML = getYear();	
 }
-
