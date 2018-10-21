@@ -10,20 +10,19 @@
     <header>
   		<div id="about">
   			<h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
-  			<p>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</p>
+  			<p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
   		</div>
     </header>
+    <!--about, contact, and search bar-->
+    <div class="topnav">
+        <center><a class="active" href="index.html">Home</a>
+        <a href="about.html" class="about">About</a>
+        <a href="contact.html">Contact Us</a></center>
+    </div>
 
-		<div id="navbar">
-			<u1>
-				<li>
-					<a class="nav-link">List of Countries</a>
-        </li>
-      </u1>
-		</div>
-		
-		<!--calender-->
-		<div class="month"> 
+
+    <!--calender-->
+    <div class="month"> 
       <ul>
         <li class="prev"><button onclick="prevMonth()">&#10094;</button></li>
         <li class="next"><button onclick="nextMonth()">&#10095;</button></li>
@@ -47,5 +46,8 @@
     <script type="text/javascript">
       dispDays(31,7);    // Writes numbers to calendar 
     </script>
-	</body>
+
+
+   
+  </body>
 </html>
