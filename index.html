@@ -8,8 +8,11 @@
 	<body>
     <header>
   		<div id="about" class = "header">
-  			<h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
-  			<p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
+        <div>
+  			 <h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
+  			 <p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
+         <div class="btn">Choose a Country and Year</div>
+        </div>
   		</div>
     </header>
 
@@ -22,8 +25,9 @@
 		<!--calender-->
 		<div class="month"> 
       <ul>
-        <li class="prev" onclick="prevMonth()">&#10094;</li>
-        <li class="next" onclick="nextMonth()">&#10095;</li>
+        <li class="prev arrow" onclick="prevMonth()">&#10094;</li>
+        <li class="next arrow" onclick="nextMonth()">&#10095;</li>
+        <li id="currCountry" style="font-size:18px">United States</li>
         <li id = "currMonth" class = 'title'></li>
         <li id = "currYear" style="font-size:18px"></li>
       </ul>
@@ -39,14 +43,7 @@
       <li>Sa</li>
     </ul>
 
-    <ul class="days" id="calDays">
-      <li></li><li></li><li></li><li></li><li></li><li></li>
-      <li></li><li></li><li></li><li></li><li></li><li></li>
-      <li></li><li></li><li></li><li></li><li></li><li></li>
-      <li></li><li></li><li></li><li></li><li></li><li></li>
-      <li></li><li></li><li></li><li></li><li></li><li></li>
-      <li></li><li></li>
-    </ul>
+    <ul class="days" id="calDays"></ul>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="wrldcalendar.js"></script>

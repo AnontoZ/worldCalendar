@@ -23,6 +23,24 @@ ul {
     list-style-type: none;
 }
 
+.btn {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    background: #1abc9c;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 2px 1px;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
@@ -33,7 +51,9 @@ body {font-family: Verdana, sans-serif;}
     padding: 20px 10px;
     color: white;
     font-style: 'light';
-    font-family: 'Oswald'
+    font-family: 'Oswald';
+    display: flex;
+    justify-content: space-around;
 }
 
 .month {

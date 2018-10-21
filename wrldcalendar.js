@@ -4,12 +4,12 @@ var months = [ "January","February","March","April","May","June","July","August"
 var monthDays = [31,getFebDays(),31,30,31,30,31,31,30,31,30,31];
 
 function dispDays() {
-	month = getMonth();
-	year = getYear();
-	text = getDaysBefore(month,year);
-	numDays = monthDays[month];
-	currDay = getDay();
-	for (i = 1; i <= numDays; i++) {
+	var month = getMonth();
+	var year = getYear();
+	var text = getDaysBefore(month,year);
+	var numDays = monthDays[month];
+	var currDay = getDay();
+	for (var i = 1; i <= numDays; i++) {
 	  if (i == currDay) {
 	  	text += "<li><span class='active'>" + i.toString() + "<br></span></li>"
 	  } 
@@ -22,14 +22,14 @@ function dispDays() {
 }
 
 function dispCalDays(month, year) {
-	text = getDaysBefore(month,year);
-	numDays = monthDays[month];
-	currMonth = false;
+	var text = getDaysBefore(month,year);
+	var numDays = monthDays[month];
+	var currMonth = false;
 	if (month == getMonth() && year == getYear()) {
 		currMonth = true;
 	}
-	currDay = getDay();
-	for (i = 1; i <= numDays; i++) {
+	var currDay = getDay();
+	for (var i = 1; i <= numDays; i++) {
 	  if (i == currDay && currMonth) {
 	  	text += "<li><span class='active'>" + i.toString() + "</span></li>"
 	  } 
@@ -68,30 +68,30 @@ function prevMonth() {
 }
 
 function getDate() {
-	date = new Date();
-	y = date.getFullYear();
-	m = date.getMonth() + 1;
-	d = date.getDate();
-	day = date.getDay();
+	var date = new Date();
+	var y = date.getFullYear();
+	var m = date.getMonth() + 1;
+	var d = date.getDate();
+	var day = date.getDay();
 }
 
 function getDay() {
-	date = new Date();
+	var date = new Date();
 	return date.getDate();
 }
 
 function getMonth() {
-	date = new Date();
+	var date = new Date();
 	return date.getMonth();
 }
 
 function getYear() {
-	date = new Date();
+	var date = new Date();
 	return date.getFullYear();
 }
 
 function getFebDays() {
-	year = getYear();
+	var year = getYear();
 	if (year % 4 > 0) {
 		return 28;
 	}
@@ -105,27 +105,27 @@ function getFebDays() {
 }
 
 function getDaysBefore(month,year) {
-	indexFirst = indexFirstDay(month,year);
+	var indexFirst = indexFirstDay(month,year);
 	if (month == 0) {
 		month = 12;
 	}
-	lastDay = monthDays[month-1];
-	start = lastDay-indexFirst+1;			//Plus 1 compensates for indexFirst automatically being ahead of the last day 9
-	text = "";
-	for (i = start; i <= lastDay; i++) {
+	var lastDay = monthDays[month-1];
+	var start = lastDay-indexFirst+1;			//Plus 1 compensates for indexFirst automatically being ahead of the last day 9
+	var text = "";
+	for (var i = start; i <= lastDay; i++) {
 	  text += "<li>"+ i.toString() + "</li>";
 	}
 	return text;
 }
 
 function getDaysAfter(month,year) {
-	indexLast = indexLastDay(month,year);
+	var indexLast = indexLastDay(month,year);
 	if (month  == 12) {
 		month = 0;
 	}
-	start = 1;
-	text = "";
-	for (i = start; i < 7-indexLast; i++) {
+	var start = 1;
+	var text = "";
+	for (var i = start; i < 7-indexLast; i++) {
 	  	text += "<li>"+ i.toString() + "</li>";
 	}
 	return text;
@@ -148,3 +148,4 @@ function writeMonth() {
 function writeYear() {
 	document.getElementById("currYear").innerHTML = getYear();	
 }
+
