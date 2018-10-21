@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
 
 body {
-	font-family: 'Oswald', sans-serif;
-	color: black;
-	background-color: #fafafa;
-	margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background-color: #fafafa;
+    margin: 0;
 }
 
 h1 {
-	font-family: 'Oswald';
+    font-family: 'Oswald';
     color: white;
 }
 
@@ -23,41 +23,32 @@ ul {
     list-style-type: none;
 }
 
-.btn {
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
-    background: #1abc9c;
-    text-align: center;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-.btn:hover {
-    box-shadow: 0px 0px 2px 1px;
-}
-
-.arrow {
-    cursor: pointer;
-}
+a, a:hover, a:active, a:visited { color: white; }
 
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
+.text {
+    color:black;
+}
+
+.maintext {
+    color:black;
+    font-family: 'Open+Sans', sans-serif;
+}
+
 .header {
     overflow: hidden;
     background-color: #6c757d;
-    padding: 20px 10px;
+    padding: 10px 10px;
     color: white;
     font-style: 'light';
-    font-family: 'Oswald';
-    display: flex;
-    justify-content: space-around;
+    font-family: 'Oswald'
 }
 
 .month {
-    padding: 70px 25px;
+    padding: 10px 10px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
@@ -122,9 +113,9 @@ body {font-family: Verdana, sans-serif;}
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.8%;
-    height: 100px;
+    width: 13.6%;
     text-align: center;
+    margin-bottom: 5px;
     font-size:12px;
     color: #777;
 }
@@ -132,7 +123,24 @@ body {font-family: Verdana, sans-serif;}
 .days li .active {
     padding: 5px;
     background: #1abc9c;
-    color: white !important;
+    color: white !important
+}
+
+.footer {
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: #010b1c;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer .text {
+    font-style: 'light';
+    font-family: 'Oswald'
 }
 
 /* Add media queries for smaller screens */
