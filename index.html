@@ -7,47 +7,47 @@
 	</head>
 
 	<body>
-    <header>
-  		<div id="about">
-  			<h1 id="intro"><center>This is Team Perry's HackGT Global Calender Project</center></h1>
-  			<p><center>The purpose of this calender is to show all the holidays of all the countries in one website for the entire year</center></p>
+    <!--<header>-->
+  		<div id="about" class = "header">
+  			<h1 id="intro"><center>The Global Calender Project</center></h1>
+  			<p style="font-style: 'bold'"><center>This year's holidays, celebrations, and special events, all in one place</center></p>
   		</div>
-    </header>
-    <!--about, contact, and search bar-->
-    <div class="topnav">
-        <center><a class="active" href="index.html">Home</a>
-        <a href="about.html" class="about">About</a>
-        <a href="contact.html">Contact Us</a></center>
-    </div>
+    <!--</header>-->
 
-
-    <!--calender-->
-    <div class="month"> 
+		<div id="navbar" class = "header">
+			<u1>
+				<li>
+					<a class="nav-link">List of Countries</a>
+        </li>
+      </u1>
+		</div>
+		
+		<!--calender-->
+		<div class="month"> 
       <ul>
-        <li class="prev"><button onclick="prevMonth()">&#10094;</button></li>
-        <li class="next"><button onclick="nextMonth()">&#10095;</button></li>
-        <li id = "currMonth">August<br></li>
-        <li id = "currYear" style="font-size:18px">2017</li>
+        <li class="prev" onclick="prevMonth()">&#10094;</li>
+        <li class="next" onclick="nextMonth()">&#10095;</li>
+        <li id = "currMonth" class = 'title'></li>
+        <li id = "currYear" style="font-size:18px"></li>
       </ul>
     </div>
 
     <ul class="weekdays">
+      <li>Su</li>
       <li>Mo</li>
       <li>Tu</li>
       <li>We</li>
       <li>Th</li>
       <li>Fr</li>
       <li>Sa</li>
-      <li>Su</li>
     </ul>
 
     <ul class="days" id="calDays"></ul>
 
     <script type="text/javascript">
-      dispDays(31,7);    // Writes numbers to calendar 
+      dispDays();   // Writes numbers to calendar 
+      writeMonth();
+      writeYear();
     </script>
-
-
-   
-  </body>
+	</body>
 </html>
